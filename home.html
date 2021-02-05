@@ -11,6 +11,7 @@
         body,h1,h2,h3,h5,h6,html {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
+            background-color: rgba(250, 248, 248, 0.986);
         }
         *{
             box-sizing: border-box;
@@ -30,7 +31,7 @@
 
          .container .display {
             display: inline-block;
-            border: 2px solid rgb(93, 188, 226);
+            /*border: 2px solid rgb(93, 188, 226);*/
             background-color: white;
             padding: 10px;
             border-radius: 25px;
@@ -46,11 +47,19 @@
             padding: 0;
         }
             
-            
+        hr {
+            border: solid rgb(120, 159, 245);
+            width: 50px;
+            margin-left: 0;
+        }
              
     </style>
 
 </head>
+<footer>
+    <!--parte bassa-->
+    Site footer
+</footer>
 <body>
     <nav class="navbar navbar-expand-sm nav-pills navbar-masthead navbar-inverse bg-dark navbar-dark">
         <div class="container">
@@ -70,9 +79,15 @@
         </div>   
     </nav>
 
-
     <div class="container">
-        <h3>Home</h3>
+
+        <div class="item">
+            <div><p style="font-size: large;">Home</p>
+                <hr>
+            </div>
+        </div>
+    
+        
         <h2 style=text-align:center>Margaret Bourke-White</h2>
         <h3 style=text-align:center>"Maggie l'Indistruttibile"</h3>
 
@@ -96,11 +111,11 @@
             Due anni dopo, nel 1943 e mentre lavorava per la U.S. Air Force, fu anche la prima fotografa donna autorizzata a 
             volare in una missione di bombardamento.  Una vera pioniera, sia come fotografa che, soprattutto, come donna. È 
             sopravvissuta al siluramento della sua nave nel Mediterraneo, agli attacchi della Luftwaffe, ai bombardamenti su 
-            Mosca e a un incidente aereo, guadagnandosi il soprannome di <strong>"Maggie l'Indistruttibile"...</strong></p>
+            Mosca e a un incidente aereo, guadagnandosi il soprannome di <strong>"Maggie l'Indistruttibile"...</strong><a href="./biografia.html" > Scopri di più</a></p>
 
-            <div class="link" style="text-align:center;">
+            <!--<div class="link" style="text-align:left;">
                 <div class="display" button  type="button"><a href="./biografia.html" > Scopri di più</a> </div>                                           
-            </div>
+            </div>-->
         </article>
         </div>
                 
@@ -115,7 +130,7 @@
                 
                 <figure class="figure-vertical">
                     <img class="img-verticale"> 
-                        <a href="./gallery.html"> <img src="./img/ghandi/Ghandi.jpg" width="80%"></a>
+                        <a href="./gallery.html#ghandi"> <img src="./img/ghandi/Ghandi.jpg" width="80%"></a>
                     <figcaption class="title">
                         <h4 class="h4-verticale">
                             <b>Gandhi</b>
@@ -126,7 +141,7 @@
                 
                 <figure class="figure-vertical">
                     <img class="img-verticale"> 
-                    <a href="./gallery.html"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"width="80%"></a>
+                    <a href="./gallery.html#guerra"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"width="75%"></a>
                     <figcaption class="title">
                         <h4 class="h4-verticale">
                             <b>Seconda Guerra</b>
