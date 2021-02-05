@@ -20,7 +20,6 @@
         }
      
 
-
         .container .item {
             display: flex;
             flex-wrap: nowrap;
@@ -38,37 +37,8 @@
             width: 100%;
             align-self: center;
             
-        }
-
-        .container .img-orizzontale {
-            box-sizing: border-box;
-            width: 20%;
-            height: 100%;
-            align-self: start;
-        }
-
-              
-        .container .item div .display {
-            display: inline-block;
-            border: 2px solid rgb(243, 241, 241);
-            background-color: white;
-            padding: 10px;
-            border-radius: 25px;
-            text-align: center;
-            font-size: small;
-            align-items: flex-end;
-            
-        }
-
-        .container .item button {
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            color: coral;
-            border: 0.5px solid rgb(233, 229, 229);
-            background-color: white;
-
-        }
+        }     
+                      
 
         hr {
             border: solid rgb(120, 159, 245);
@@ -89,29 +59,6 @@
 
        
 
-        .container .card-orizzontale {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            width: 100%;/*cambio a 100*/
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background-color: white;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .p-orizzontale {
-            display: block;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-        }
-
-        .container .card-orizzontale:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
         .title {
             padding: 2px 16px;
             
@@ -128,26 +75,32 @@
             margin: 0;
         }
 
-        .figure-orizzontale {
+        .figure-verticale {
             margin-inline-start: 0;
-            margin-inline-end: 0;
+            margin-inline-end: 40px;
             margin-block-start: 0;
             margin-block-end: 0;
             border-color: black;
+            display: inline-block;
             text-align: left;
+            margin: 0;
         }
+
+       
 
         .container-sopra {
             display: flex;
             flex-wrap: nowrap;
             justify-content:space-between;
         }
-
+        
         .container-giu {
-            margin-top: 20px;
-            /*text-align: center;*/
-            justify-content: space-between;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:space-between;
         }
+        
+      
 
         .h6-verticale {
             text-align: center;
@@ -155,8 +108,7 @@
             height: 50px;
             background-color:rgb(202, 199, 199);
         }
-
-        
+       
 
         .inline {
             display: inline-block;
@@ -168,8 +120,14 @@
         }
 
 
-        .link{
-            text-align:right;
+        .btn:hover{
+            background-color:rgb(132, 170, 172);           
+
+        }
+        
+        .btn{
+            background-color:rgb(238, 244, 245);       
+
         }
     </style>
 
@@ -198,17 +156,13 @@
 <div class="container">
 
     <div class="item">
-        <div><p style="font-size: large;">Gallery</p>
+        <div><p style="font-size: large; " id="gallery">Gallery</p>
             <hr>
         </div>
 
         <div></div>
 
-        <div style="align-self: center; text-align: center">
-            <div class="link">
-                <div class="display" button  type="button">Torna a la Home</div> <button type="button" style="border: 1px solid coral;"><</button> <button style="border: 1px solid coral;color: rgb(230, 70, 11)">></button>
-            </div>
-        </div>
+        
     </div>
 
     
@@ -223,10 +177,11 @@
                     
 
     <div class="container-sopra">
+        
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale">                     
-            <a data-lightbox="miniature" href="./img/ghandi/margaret_bourke-white_gandhi_4.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_4.jpg" width="100%"></a>
+            <a data-lightbox="ghandi" href="./img/ghandi/margaret_bourke-white_gandhi_4.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_4.jpg" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Mahatma Ghandi</b>
@@ -237,7 +192,7 @@
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale"> 
-            <a data-lightbox="miniature" href="./img/ghandi/margaret_bourke-white_gandhi_5.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_5.jpg" width="100%"></a>
+            <a data-lightbox="ghandi" href="./img/ghandi/margaret_bourke-white_gandhi_5.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_5.jpg" width="100%"></a>
            
             <figcaption class="title">
                 <h6 class="h6-verticale">
@@ -249,7 +204,7 @@
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale">
-            <a data-lightbox="miniature" href="./img/ghandi/margaret_bourke-white_gandhi_6.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_6.jpg" width="100%"></a>
+            <a data-lightbox="ghandi" href="./img/ghandi/margaret_bourke-white_gandhi_6.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_6.jpg" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Mahatma Ghandi</b>
@@ -261,7 +216,7 @@
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale"> 
-            <a data-lightbox="miniature" href="./img/ghandi/margaret_bourke-white_gandhi_7.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_7.jpg" width="100%"></a>
+            <a data-lightbox="ghandi" href="./img/ghandi/margaret_bourke-white_gandhi_7.jpg"> <img src="./img/ghandi/margaret_bourke-white_gandhi_7.jpg" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Mahatma Ghandi</b>
@@ -280,74 +235,77 @@
             Margaret Bourke-White ha visto e fotografato le pile di corpi nudi senza vita, i resti di ossa nei forni, gli scheletri coperti di pelle ancora vivi ma che presto moriranno, i paralumi fatti di pelle umana tatuata.
             Secondo le sue parole: <b>"Usare una macchina fotografica era quasi un sollievo. Metteva una leggera barriera tra l'orrore di fronte a me e me stesso"</b>.
             Alla fine della guerra Bourke-White scrisse un libro intitolato "Fatherland, Rest Quietly", che fu usato come documento durante i processi di Norimberga.
-
-                </p>
-    <div class="container-sopra">
+            </p>
+    <div class="container-giu">
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale">                     
-            <a data-lightbox="miniature" href="./img/Seconda guerra/margaret_bourke_white_guerra_1.jpg"> <img src="./img/Seconda guerra/margaret_bourke_white_guerra_1.jpg" width="100%"></a>
+            <a data-lightbox="guerra" href="./img/Seconda guerra/margaret_bourke_white_guerra_1.jpg"> <img src="./img/Seconda guerra/margaret_bourke_white_guerra_1.jpg" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Seconda Guerra Mondiale</b>
                 </h6>
-                
             </figcaption>
         </figure>
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale"> 
-            <a data-lightbox="miniature" href="./img/Seconda guerra/margaret_bourke_white_guerra_2.png"> <img src="./img/Seconda guerra/margaret_bourke_white_guerra_2.png" width="100%"></a>
-           
+            <a data-lightbox="guerra" href="./img/Seconda guerra/margaret_bourke_white_guerra_2.png"> <img src="./img/Seconda guerra/margaret_bourke_white_guerra_2.png" width="100%"></a>        
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Seconda Guerra Mondiale</b>
-                </h6>
-                
+                </h6>            
             </figcaption>
         </figure>
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale">
-            <a data-lightbox="miniature" href="./img/Seconda guerra/margaret_bourke-white_wwii_camps_3.png"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_3.png" width="100%"></a>
+            <a data-lightbox="guerra" href="./img/Seconda guerra/margaret_bourke-white_wwii_camps_3.png"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_3.png" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Seconda Guerra Mondiale</b>
                 </h6>
-               
             </figcaption>
         </figure>
 
 
         <figure class="figure-verticale card-verticale">
             <img class="img-verticale"> 
-            <a data-lightbox="miniature" href="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg" width="100%"></a>
+            <a data-lightbox="guerra" href="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg" width="100%"></a>
             <figcaption class="title">
                 <h6 class="h6-verticale">
                     <b>Seconda Guerra Mondiale</b>
-                </h6>
-                
+                </h6>       
             </figcaption>
         </figure>
 
     </div>
+          
 
 
+
+      <div class="btn-group">
+        <button class="btn"><a href="./Home.html" >Home</button></a>
+        <button class="btn"><a href="./biografia.html" >Biografia</button></a>
+        <button class="btn"><a href="./gallery.html#gallery" >Inizio pagina</button></a>
+      </div>
     
 
-</div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="./scripts_lightbox/js/lightbox-plus-jquery.js"></script>
 
-    <footer>
-        <div class="container">
+    
+    <footer> 
         
         <hr>    
         Sito costruto da:<br>
         Nelly Ruiz.
-        </div>
+       
         
     </footer>
+
+</div>
+
 </body>
 </html>
