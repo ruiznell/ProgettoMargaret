@@ -25,20 +25,35 @@
             box-sizing: border-box;
             width: 200px;
             height: 200px;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-items:center;
+            
+            text-align:center;
          }
 
-         
+         .row {
+             margin: 0 -1rem; 
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
 
-        .link-gallery {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content:space-between;
-            padding: 0;
         }
-            
+        .card__image{
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+
+        .col-50{
+            padding: 1rem;
+            width: 50%;
+        }
+        .col-50:first-child{
+            padding-left: 0;
+        }
+        .col-50:last-child{
+            padding-right: 0;
+        }
+
+
         hr {
             border: solid rgb(120, 159, 245);
             width: 50px;
@@ -51,10 +66,12 @@
 
         }
         .btn{
-            background-color:rgb(238, 244, 245);
-            
-            
+            background-color:rgb(238, 244, 245);         
 
+        }
+
+        .h4-verticale{
+            color:cadetblue;
         }
              
     </style>
@@ -117,45 +134,52 @@
         </article>
         </div>
                 
-        <div>
-        <article>
+       
+        
             
             <div>
-                <p>L'opera di Margaret Bourke-White fa riferimento a una varietà di temi, tra i quali risaltano le fotografie scattate a Ghandi e quelle della Seconda Guerra Mondiale.</p>
+                <p style="text-align:justify">L'opera di Margaret Bourke-White fa riferimento a una varietà di temi, tra i quali risaltano le fotografie scattate a Ghandi e quelle della Seconda Guerra Mondiale.</p>
             </div>
             
-            <div class="link-gallery">
+            
+            <div class="container">
+            <div class="section__content row">
+                <div class="col-50">
+                <article class="card">
+                    <figure class=card__image>
+                        <a href="./gallery.html#ghandi"> <img src="./img/ghandi/Ghandi.jpg" width="80%"></a>  
+                        
+                        <figcaption class="title">
+                            <h4 class="h4-verticale">
+                                <b>Fotografie Gandhi</b>
+                            </h4>                                         
+                        </figcaption>
+                    </figure>
+                </article>
+                </div>
                 
-                <figure class="figure-vertical">
-                    <img class="img-verticale"> 
-                        <a href="./gallery.html#ghandi"> <img src="./img/ghandi/Ghandi.jpg" width="80%"></a>
+                <div class="col-50">
+                    <article class="card">
+                        <figure class=card__image>
+                            <a href="./gallery.html#guerra"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"width="75%"></a>
                     <figcaption class="title">
                         <h4 class="h4-verticale">
-                            <b>Gandhi</b>
+                            <b>Fotografie Seconda Guerra</b>
                         </h4>                                         
                     </figcaption>
-                </figure>
-           
-                
-                <figure class="figure-vertical">
-                    <img class="img-verticale"> 
-                    <a href="./gallery.html#guerra"> <img src="./img/Seconda guerra/margaret_bourke-white_wwii_camps_5.jpg"width="75%"></a>
-                    <figcaption class="title">
-                        <h4 class="h4-verticale">
-                            <b>Seconda Guerra</b>
-                        </h4>                                           
-                    </figcaption>
-                </figure>
-            </div>
-        </article>
+                        </figure>
+                    </article>
+                </div>
+                </div>
     </div>
+   
 
         <div class="btn-group">
             <button class="btn"><a href="./gallery.html" >Gallery</button></a>
             <button class="btn"><a href="./biografia.html" >Biografia</button></a>
             <button class="btn"><a href="./home.html#home" >Inizio pagina</button></a>
         </div>
-    </div>
+
 
 
         
@@ -163,15 +187,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
-    <div class="container">
+    
     <footer> 
         
         <hr>    
-        Sito costruto da:<br>
+        Sito costruito da:<br>
         Nelly Ruiz.
        
         
     </footer>
-</div>
+
 </body>
 </html>
