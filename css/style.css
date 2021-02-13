@@ -54,16 +54,6 @@
             
         }
 
-        .figure-verticale {
-            margin-inline-start: 0;
-            margin-inline-end: 40px;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            border-color: black;
-            display: inline-block;
-            text-align: left;
-            margin: 0;
-        }
 
         .figure-verticale {
             margin-inline-start: 0;
@@ -91,12 +81,13 @@
         }
         
       
-
-        .h6-verticale {
+       
+        .p-verticale {
             text-align: center;
             color: rgb(120, 159, 245);;
             height: 50px;
             background-color:rgb(202, 199, 199);
+            font-size: small;
         }
        
 
@@ -118,4 +109,81 @@
         .btn{
             background-color:rgb(238, 244, 245);       
 
+        }
+
+        /*style home*/
+        .container .img {
+            border-radius: 50%;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;           
+            text-align:center;
+         }
+
+         .container .img:hover {
+         -webkit-transform:scale(1.3);transform:scale(1.3);
+         }
+
+         .center {
+            text-align: center;
+            padding: 20px;
+        }
+         .row {
+             margin: 0 -1rem; 
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+
+        }
+        .card_image{
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+
+        .col-50{
+            padding: 1rem;
+            width: 50%;
+        }
+        .col-50:first-child{
+            padding-left: 0;
+        }
+        .col-50:last-child{
+            padding-right: 0;
+        }
+
+        .h6-verticale{
+            color: rgb(120, 159, 245);
+            background-color: white;
+        }
+
+       /*style biografia*/
+
+        .img {
+            border-radius: 50%;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;  
+            transition: .5s ease-in-out;
+            
+         }
+         
+         .img:hover{
+                  
+            -webkit-transform: rotate(360deg);transform: rotate(360deg);          
+        }
+
+         .align{
+            text-align: justify;
+        }
+
+       .libro{
+            text-align:left;
+            	
+            transition: .5s ease-in-out;
+
+       }
+        .libro:hover{
+                  
+            -webkit-transform: rotate(360deg);transform: rotate(360deg);          
         }
